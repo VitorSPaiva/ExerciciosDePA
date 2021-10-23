@@ -12,7 +12,7 @@ p; // como p recebeu o endereço de i, então p = &i = 4094.
 
 *p+2; // retorna 7, pois o conteudo *p = 5 é somado com o valor 2.
 
-**&p; // retorna o valor de i = 5. Vai imprimir o conteudo do endereço de p.
+**&p; // retorna o valor de i = 5. Vai imprimir o conteudo do endereço de *p.
 
 3**p; // retorna 15, pois, como *p = 5, 3*(*p) = 3*(5) = 15.
 

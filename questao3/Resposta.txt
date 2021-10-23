@@ -1,0 +1,21 @@
+/*
+int i, j;
+int *p, *q;
+*/
+
+
+p = i; // ilegal, pois o endereço p não consegue receber o valor de i.
+
+q = &j; // legal, pois o endereço q recebe o endereço &j.
+
+p = &*&i; // legal, ainda está recebendo o endereço de i.
+
+i = (*&)j; // ilegal, pois o parenteses dar prescedência para o (*&) que não tem operação.
+
+i = *&j; // legal, i recebe o conteudo do endereço de j.
+
+i = *&*&j; // legal, vai receber o conteudo do endereço do conteudo do endereço de j.
+
+q = *p; // ilegal, o endereço q não pode receber o conteudo de *p.
+
+i = (*p)++ + *q; // legal, i recebe o conteudo *p + conteudo *q.
