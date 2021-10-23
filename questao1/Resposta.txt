@@ -1,0 +1,17 @@
+/*
+int i=3,j=5;
+int *p, *q;
+p = &i;
+q = &j;
+*/
+
+//Saídas das operações
+
+p == &i; // retorna true, pois o endereço p é o mesmo de &i.
+
+*p - *q; // retorna -2, pois o conteúdo de *p = 3 e o conteúdo de *q = 5.
+
+**&p; // retorna o valor de i, 3. Aparentemente, ele pega o endereço p, que é -
+// o mesmo que &i e imprime seu conteúdo.
+
+3 - *p/(*q) + 7; // retorna 10, pois *p/(*q) = 0, uma vez que *p e *q são inteiros.
