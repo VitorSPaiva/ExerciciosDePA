@@ -40,7 +40,7 @@ int main() {
 
   /* (e) */
   p3 = nome;
-  printf("%c \n", *p3); // Valor inesperado, saída = P. O ponteiro está resgatando o endereço de nome[0]
+  printf("%c \n", *p3); // Valor inesperado, saída = P. O ponteiro está resgatando o conteúdo de nome[0]
 
  /* (f) */
   p3 = p3 + 4;
